@@ -2,6 +2,10 @@
 * {
   margin: 0;
 }
+.nav-container{
+  position: fixed;
+
+}
 
 nav {
   display: flex;
@@ -108,14 +112,18 @@ nav ul {
 header {
   background-image: url(../images/developer.png), url(../images/header_bg.png);
   background-repeat: no-repeat;
-  background-size: auto 75vh;
+  background-size: auto 90vh;
   background-position: bottom left, bottom right;
   
   /* background: rgba(253, 110, 10, 0.1); */
 }
 .banner-image {
+   position: absolute;
+  bottom: 0;
+  right: 0;
   max-height: 100%;
-  background-position: bottom right;
+  /* background-position: bottom right; */
+  margin-bottom:0;
 }
 .section-title {
   color: rgb(24, 24, 24);
@@ -272,7 +280,7 @@ main {
 .download-btn:hover {
   background-color: #e55a00;
 }
-/* footer */
+
 .contact-body {
   font-family: Arial, sans-serif;
   background-color: #fff7f1;
