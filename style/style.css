@@ -2,6 +2,7 @@
 * {
   margin: 0;
 }
+
 nav {
   display: flex;
   align-items: center;
@@ -24,6 +25,12 @@ nav {
   display: flex;
   list-style: none;
 }
+/* nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 200px;
+} */
 nav ul a {
   text-decoration: none;
 }
@@ -45,9 +52,16 @@ nav ul {
   letter-spacing: 0%;
   text-align: left;
   border: none;
+  cursor: pointer;
+}
+.button:hover{
+  zoom:120%;
+  
+  background-color:rgb(71, 183, 227);
 }
 .secondary-bg {
   background-color: rgb(255, 248, 243);
+  height:100vh;
 }
 .banner-greeting {
   color: rgb(71, 71, 71);
@@ -93,14 +107,15 @@ nav ul {
 }
 header {
   background-image: url(../images/developer.png), url(../images/header_bg.png);
-
   background-repeat: no-repeat;
-  background-size: auto 420px;
-  background-position: top left, bottom right;
+  background-size: auto 75vh;
+  background-position: bottom left, bottom right;
+  
   /* background: rgba(253, 110, 10, 0.1); */
 }
 .banner-image {
-  max-height: 400px;
+  max-height: 100%;
+  background-position: bottom right;
 }
 .section-title {
   color: rgb(24, 24, 24);
